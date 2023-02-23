@@ -1,13 +1,17 @@
-
-*{
+* {
   margin: 0;
   padding: 0;
-  box-sizing:border-box;
+  box-sizing: border-box;
   font-family: 'Blinker', sans-serif;
 }
 
-body{
-  background-color: #330036;
-  color: #eee1b3;
+body {
+background-color: #1C2541;
+color: #f8f8f2
+;
 }
 
+a,
+button {
+  cursor: pointer;
+}
