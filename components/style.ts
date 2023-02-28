@@ -1,10 +1,4 @@
 import styled from "styled-components";
-export const Container = styled.div`
-  width: 350px;
-  height: auto;
-  align-content: center;
-  padding-top: 25px;
-`;
 
 // export const Content = styled.div`
 //   width: 1120px;
@@ -39,37 +33,77 @@ export const Container = styled.div`
 
 // export const SubTitle = styled.span``;
 
-export const Image = styled.img`
-  float: left;
-  display: flex;
-`;
-
 export const Nav = styled.nav`
-  h3 {
-    padding: 20px;
-  }
-  color: #5bc0be;
-  li {
-    text-align: end;
-    justify-content: space-around;
-  }
-`;
-
-export const UlNavbar = styled.ul`
-  text-align: right;
+  grid-template-columns: auto auto;
+  display: grid;
+  width: 100%;
+  height: 7vh;
+  background-color: #0b132b;
+  justify-content: space-between;
   align-items: center;
-  padding-top: 35px;
-  padding-right: 200px;
+  color: #5bc0be;
+
+  h3 {
+    margin-left: 5vh;
+    font-size: 22px;
+    letter-spacing: 4px;
+    transition: 0.3s;
+
+    &:hover {
+      letter-spacing: 6px;
+    }
+
+    @media (max-width: 1129px) {
+      font-size: 18px;
+      margin-left: 10px;
+    }
+  }
+
+  ul {
+    display: flex;
+
+    @media (max-width: 1129px) {
+      position: absolute;
+      top: 7vh;
+      right: 0;
+      width: 50vw;
+      height: 93vh;
+      background-color: #0b132b;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+
+  li {
+    list-style: none;
+    margin-left: 70px;
+    margin-right: 10vh;
+  }
+
+  a {
+    color: #5bc0be;
+    font-size: 16px;
+    transition: 0.3s;
+    letter-spacing: 2px;
+    text-decoration: none;
+    &:hover {
+      opacity: 0.5;
+      letter-spacing: 4px;
+    }
+  }
 `;
 
-export const LiNavbar = styled.li`
-  padding: 50px;
-  display: inline;
+export const Group = styled.div`
+  margin-right: "10vh";
 `;
-export const ANavbar = styled.a`
-  font-size: 20px;
 
-  &:hover {
-    color: #fff;
+export const Icon = styled.div`
+  display: none;
+
+  @media (max-width: 1129px) {
+    display: block;
+    margin-right: 2vh;
+    justify-content: center;
   }
 `;
