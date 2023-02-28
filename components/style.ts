@@ -107,3 +107,17 @@ export const Icon = styled.div`
     justify-content: center;
   }
 `;
+
+export const Apresentation = styled.div`
+  h2 {
+    color: #5bc0be;
+  }
+
+  h6 {
+    color: #5bc0be;
+  }
+
+  p {
+    max-width: 50vw;
+  }
+`;
