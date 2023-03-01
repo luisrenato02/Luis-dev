@@ -3,13 +3,11 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
 
 export const Navbar = () => {
-  const [showMenu, setShowElement] = useState(false);
-  const showOrHide = () => setShowElement(true);
   return (
     <header>
       <Nav>
         <h3>&lt; Luis Renato / &gt;</h3>
-        <Icon id="icon" onClick={() => showMenu}>
+        <Icon id="icon" onClick={() => console.log("teste")}>
           <GiHamburgerMenu style={{}} />
         </Icon>
 
