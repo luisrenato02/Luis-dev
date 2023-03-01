@@ -1,22 +1,18 @@
 import { Nav, Group, Icon } from "./style";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { useState } from "react";
 
 export const Navbar = () => {
-  const MenuMobile = (el) => {
-    var display = document.getElementById.style.display;
-    if(display == 'none'
-    document.getElementById(el)?.style.display = 'block'
-    else
-    document.getElementById(el)?.style.display = 'none'
-  };
-
+  const [showMenu, setShowElement] = useState(false);
+  const showOrHide = () => setShowElement(true);
   return (
     <header>
       <Nav>
         <h3>&lt; Luis Renato / &gt;</h3>
-        <Icon id='icon' onClick={(icon) => console.log("teste")}>
+        <Icon id="icon" onClick={() => showMenu}>
           <GiHamburgerMenu style={{}} />
         </Icon>
+
         <Group>
           <ul>
             <li>
