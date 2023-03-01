@@ -1,8 +1,8 @@
-import "@/styles/globals.css";
-import { Navbar } from "components/Navbar";
+import "../styles/globals.css";
+import { Navbar } from "../components/Navbar";
+import { Home } from "../components/Home";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import { Home } from "components/Home";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

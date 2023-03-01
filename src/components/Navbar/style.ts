@@ -1,38 +1,5 @@
 import styled from "styled-components";
 
-// export const Content = styled.div`
-//   width: 1120px;
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-//   padding: 0 20px;
-// `;
-
-// export const Title = styled.div`
-//   font-size: 30px;
-// `;
-
-// export const NavLinks = styled.div`
-//   display: flex;
-//   gap: 20px;
-
-//   @media (max-width: 560px) {
-//     flex-direction: column;
-//     background-color: #fff;
-//     position: fixed;
-//     height: 100%;
-
-//     gap: 0px;
-//     top: 0px;
-//   }
-// `;
-
-// export const ContentTitle = styled.div`
-//   text-align: end;
-// `;
-
-// export const SubTitle = styled.span``;
-
 export const Nav = styled.nav`
   grid-template-columns: auto auto;
   display: grid;
@@ -44,7 +11,7 @@ export const Nav = styled.nav`
   color: #5bc0be;
 
   h3 {
-    margin-left: 5vh;
+    margin-left: 10px;
     font-size: 22px;
     letter-spacing: 4px;
     transition: 0.3s;
@@ -96,6 +63,13 @@ export const Nav = styled.nav`
 
 export const Group = styled.div`
   margin-right: "10vh";
+
+  &.menu-open {
+    display: block;
+  }
+  @media (max-width: 1129px) {
+    display: none;
+  }
 `;
 
 export const Icon = styled.div`
@@ -105,19 +79,5 @@ export const Icon = styled.div`
     display: block;
     margin-right: 2vh;
     justify-content: center;
-  }
-`;
-
-export const Apresentation = styled.div`
-  h2 {
-    color: #5bc0be;
-  }
-
-  h6 {
-    color: #5bc0be;
-  }
-
-  p {
-    max-width: 50vw;
   }
 `;

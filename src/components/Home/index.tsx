@@ -1,15 +1,18 @@
 import Image from "next/image";
+
 import { Apresentation } from "./style";
+import Logo from "../../assets/logo.png";
+
 export const Home = () => {
   return (
     <main>
       <div>
         <div>
-          <Image width={300} height={300} src="/../public/img/logo.png" />
+          <Image width={300} height={300} src={Logo} alt="Eu" />
         </div>
         <Apresentation>
           <h2>Luís Renato Toniati</h2>
-          <h6>Desenvolvedor Web-JR</h6>
+          <h5>Desenvolvedor Web-JR</h5>
           <p>
             Olá, tenho 21 anos e sou formado em Análise e Desenvolvimento de
             sistemas, e atualmente sou desenvolvedor web na Infoluck Sistemas
