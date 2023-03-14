@@ -11,13 +11,13 @@ export const Nav = styled.nav`
   color: #5bc0be;
 
   h3 {
-    margin-left: 10px;
+    margin-left: 5rem;
     font-size: 22px;
     letter-spacing: 4px;
     transition: 0.3s;
 
     &:hover {
-      letter-spacing: 6px;
+      transform: scale(1.1);
     }
 
     @media (max-width: 1129px) {

@@ -3,10 +3,8 @@ import styled from "styled-components";
 export const Apresentation = styled.div`
   display: grid;
   margin-left: 5vw;
-  h2 {
-    color: #5bc0be;
-  }
 
+  h2,
   h5 {
     color: #5bc0be;
   }

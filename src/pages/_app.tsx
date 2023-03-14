@@ -3,6 +3,7 @@ import { Navbar } from "../components/Navbar";
 import { Home } from "../components/Home";
 import type { AppProps } from "next/app";
 import Head from "next/head";
+import { Skills } from "@/components/Skills";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -13,6 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
       <Navbar />
       <Home />
+      <Skills />
     </>
   );
 }
